@@ -1,34 +1,34 @@
-import "./style.css";
-import more from "./assets/more.svg";
-import enter from "./assets/enter.svg";
-import refresh from "./assets/rotation.svg";
+import './style.css';
+import more from './assets/more.svg';
+import enter from './assets/enter.svg';
+import refresh from './assets/rotation.svg';
 
 const tasks = [
   {
-    description: "Task num 1",
+    description: 'Task num 1',
     completed: false,
     index: 0,
   },
   {
-    description: "Task num 2",
+    description: 'Task num 2',
     completed: false,
     index: 1,
   },
   {
-    description: "Task num 3",
+    description: 'Task num 3',
     completed: false,
     index: 2,
   },
   {
-    description: "Task num 4",
+    description: 'Task num 4',
     completed: false,
     index: 3,
   },
 ];
 
-const taskContainer = document.querySelector(".task-container");
-const refreshBtn = document.querySelector(".refresh");
-const enterBtn = document.querySelector(".enter");
+const taskContainer = document.querySelector('.task-container');
+const refreshBtn = document.querySelector('.refresh');
+const enterBtn = document.querySelector('.enter');
 
 refreshBtn.src = refresh;
 enterBtn.src = enter;
