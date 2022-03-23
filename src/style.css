@@ -1,0 +1,81 @@
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  min-width: 300px;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+  font-size: 20px;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+}
+
+.todolist {
+  display: grid;
+  grid-template-rows: auto auto 1fr auto;
+  border: 2px solid black;
+  height: 80%;
+  width: 80%;
+  margin: auto;
+}
+
+.list-header,
+.add-new-task {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  border-bottom: 2px solid #000;
+  padding: 0 20px;
+  height: 50px;
+  column-gap: 20px;
+}
+
+.list-header > h1 {
+  letter-spacing: 0.1rem;
+}
+
+img {
+  height: 24px;
+}
+
+input,
+button {
+  border: 0;
+  background: none;
+}
+
+input:focus {
+  outline: none;
+}
+
+.task {
+  height: 50px;
+  display: grid;
+  align-items: center;
+  column-gap: 40px;
+  padding: 0 20px;
+  flex-direction: row;
+  grid-template-columns: auto 1fr auto;
+  border-bottom: 1px solid #000;
+}
+
+.more {
+  justify-self: end;
+}
+
+#clear-btn {
+  border-top: 1px solid #000;
+  height: 70px;
+}
