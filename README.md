@@ -46,6 +46,10 @@ Contributions, issues, and feature requests are welcome!
 
 Feel free to check the [issues page](git@github.com:Alfredbis29/TODO-LIST1.git/issues).
 
+## Acknowledgments
+
+- Huge thanks to [Ben](https://github.com/Benmuiruri) for his contribution.
+
 ## Show your support
 
 Give a ⭐️ if you like this project!
