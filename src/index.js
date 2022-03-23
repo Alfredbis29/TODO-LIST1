@@ -5,22 +5,22 @@ import refresh from "./assets/rotation.svg";
 
 const tasks = [
   {
-    description: "Today's task",
+    description: "Task num 1",
     completed: false,
     index: 0,
   },
   {
-    description: "Tomorrow's task",
+    description: "Task num 2",
     completed: false,
     index: 1,
   },
   {
-    description: "Today task",
+    description: "Task num 3",
     completed: false,
     index: 2,
   },
   {
-    description: "Tomorrow's task",
+    description: "Task num 4",
     completed: false,
     index: 3,
   },
