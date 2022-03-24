@@ -12,3 +12,10 @@ enterBtn.src = enter;
 const newlib = new AddRemoveTask();
 
 newlib.submitNewTaskEntry();
+
+window.onload = () => {
+  const store = JSON.parse(localStorage.getItem("Todo-list1")) || [];
+  store.forEach((task) => {
+    newlib.newTask(task);
+  });
+};

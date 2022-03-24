@@ -16,7 +16,7 @@ html {
   margin: 0;
   font-size: 20px;
   color: hsl(245, 69%, 75%);
-  font-family: 'Merienda';
+  font-family: sans-serif;
 }
 
 body {
@@ -37,11 +37,11 @@ body {
 }
 
 .list-header,
-.add-new-task {
+.add-form {
   display: grid;
   grid-template-columns: 1fr auto;
   align-items: center;
-  border-bottom: 1px solid #383f51;
+  border-bottom: 1px solid black;
   padding: 0 20px;
   height: 50px;
   column-gap: 20px;
@@ -50,13 +50,13 @@ body {
 #add-new-task,
 #add-new-task::placeholder {
   color: #ada7ac;
-  font-family: 'Merienda', cursive;
+  font-family: sans-serif;
   letter-spacing: 0.1rem;
 }
 
 .list-header > h1 {
   letter-spacing: 0.1rem;
-  font-family: 'Merriweather', serif;
+  font-family: sans-serif;
   font-size: 25px;
 }
 
@@ -82,7 +82,7 @@ input:focus {
   padding: 0 20px;
   flex-direction: row;
   grid-template-columns: auto 1fr auto;
-  border-bottom: 2px dotted #383f51;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.493);
 }
 
 .new-task {
@@ -93,4 +93,8 @@ input:focus {
   cursor: pointer;
   height: 70px;
   background-color: #030e1b;
+}
+
+.checked {
+  text-decoration: line-through  #fff;
 }
