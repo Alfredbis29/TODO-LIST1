@@ -31,7 +31,7 @@ class AddRemoveTask {
 
   deleteTask(button) {
     button.addEventListener("click", () => {
-      // console.log(button);
+      console.log(button);
       this.store = this.store.filter((tasks) => button.id !== tasks.index);
       taskContainer.innerHTML = "";
       this.store.forEach((task) => {
@@ -58,11 +58,11 @@ class AddRemoveTask {
     allCheckBoxes.forEach((checkBox) => {
       checkBox.addEventListener("click", (e) => {
         const clickedId = e.target.id;
-        // console.log(clickedId);
+        console.log(clickedId);
         const clickedTask = this.store.find((e) => e.index === clickedId);
-        // console.log(this.store);
+        console.log(this.store);
         clickedTask.completed = !clickedTask.completed;
-        // console.log(this.store);
+        console.log(this.store);
         localStorage.setItem("Todo-list1", JSON.stringify(this.store));
         taskContainer.innerHTML = "";
         this.store.forEach((s) => this.newTask(s));
