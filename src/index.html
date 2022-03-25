@@ -6,22 +6,25 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>TODO LIST</title>
-  <script defer src="main.js"></script>
 </head>
 
 <body>
   <div class="todolist">
     <div class="list-header">
-      <h1>TODAY LIST</h1>
-      <img class="refresh" src="../src/assets/rotation.svg" alt="refresh">
+      <h1>TODO LIST</h1>
+      <img class="refresh" src="." alt="refresh">
     </div>
     <div class="add-new-task">
-      <input type="text" placeholder="Add to your list...">
-      <img class="enter" src="../src/assets/enter.svg" alt="enter">
+      <form class="add-form">
+        <input id="add-new-task" type="text" placeholder="Add to your list...">
+        <button type="submit">
+          <img class="enter" src="." alt="enter">
+        </button>
+      </form>
     </div>
     <div class="task-container">
     </div>
-    <button type="button" id="clear-btn">Clear all Tasks</button>
+    <button type="button" class="clear-btn" id="clear-btn">Delete All Task complited</button>
   </div>
 </body>
 
