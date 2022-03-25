@@ -31,7 +31,7 @@ git clone  <git@github.com:Alfredbis29/TODO-LIST1.git>
 ```
 
 - run `npm i` to install all dependencies
-- run `npm run build` to bundle the project with webpack, and
+- run `npm run build` or `npm run serve` to bundle the project with webpack, and
 - run `npm start` to launch the application in the browser
 
 ## Author
