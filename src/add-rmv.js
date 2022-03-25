@@ -68,6 +68,7 @@ class AddRemoveTask {
         this.store.forEach((s) => this.newTask(s));
       });
     });
+
     const deleteBtn = document.querySelectorAll('.delete');
     deleteBtn.forEach((btn) => {
       this.deleteTask(btn);
@@ -84,6 +85,24 @@ class AddRemoveTask {
     });
 
     localStorage.setItem('Todo-list1', JSON.stringify(this.store));
+  }
+
+  editTasks() {
+    // edit
+    taskContainer.addEventListener('focusout', (e) => {
+      if (e.target.className.includes('Task')) {
+        const inputValue = e.target.value;
+        const { id } = e.target.parentNode;
+
+        this.store.forEach((task) => {
+          if (task.index === id) {
+            task.description = inputValue;
+          }
+        });
+
+        localStorage.setItem('Todo-list1', JSON.stringify(this.store));
+      }
+    });
   }
 
   removeAllCompleted() {
