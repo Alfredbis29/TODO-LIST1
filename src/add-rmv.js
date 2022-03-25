@@ -106,7 +106,7 @@ class AddRemoveTask {
       this.filteredTask = this.store.filter((task) => task.completed !== true);
 
       localStorage.setItem('Todo-list1', JSON.stringify(this.filteredTask));
-      // taskContainer.innerHTML = "";
+
       this.newTask(this.filteredTask);
     });
   }
@@ -124,7 +124,6 @@ class AddRemoveTask {
     addForm.addEventListener('submit', (e) => {
       e.preventDefault();
       if (addNewTaskInput.value === '') return;
-      // const index = this.store.length < 1 ? 1 : this.store.length + 1;
       const index = uuid();
       const currTask = new Task(addNewTaskInput.value, index);
       this.store.push(currTask);
