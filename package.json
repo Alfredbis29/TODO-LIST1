@@ -1,0 +1,26 @@
+{
+  "name": "todo-list1",
+  "version": "1.0.0",
+  "description": "> Todo list is a web app help you to management well your important tasks",
+  "main": "webpack.config.js",
+  "scripts": {
+    "start": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alfredbis29/TODO-LIST1.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Alfredbis29/TODO-LIST1/issues"
+  },
+  "homepage": "https://github.com/Alfredbis29/TODO-LIST1#readme",
+  "devDependencies": {
+    "stylelint": "^13.13.1",
+    "stylelint-config-standard": "^21.0.0",
+    "stylelint-csstree-validator": "^1.9.0",
+    "stylelint-scss": "^3.21.0"
+  }
+}
