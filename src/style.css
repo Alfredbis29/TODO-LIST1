@@ -52,6 +52,7 @@ body {
   color: #ada7ac;
   font-family: sans-serif;
   letter-spacing: 0.1rem;
+  cursor: pointer;
 }
 
 .list-header > h1 {
@@ -61,11 +62,13 @@ body {
 }
 
 img {
+  cursor: pointer;
   height: 24px;
 }
 
 input,
 button {
+  cursor: pointer;
   border: 0;
   background: none;
 }
@@ -75,6 +78,7 @@ input:focus {
 }
 
 .task {
+  cursor: pointer;
   height: 50px;
   display: grid;
   align-items: center;
