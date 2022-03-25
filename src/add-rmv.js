@@ -47,9 +47,9 @@ class AddRemoveTask {
           <input type="checkbox" ${
   completed ? 'checked' : ''
 } id='${index}' class="check">
-          <input class="Task ${id}  ${
+          <input class="Task ${id} ${
   completed ? 'checked' : ''
-}" type="text" value="${description}">
+}" type="text" id=${index} value="${description}">
           <img id="${index}" class="delete" src="${discard}" alt="more">
       </div>
       `;
@@ -85,23 +85,19 @@ class AddRemoveTask {
     });
 
     localStorage.setItem('Todo-list1', JSON.stringify(this.store));
-  }
 
-  editTasks() {
-    // edit
-    taskContainer.addEventListener('focusout', (e) => {
-      if (e.target.className.includes('Task')) {
-        const inputValue = e.target.value;
-        const { id } = e.target.parentNode;
-
-        this.store.forEach((task) => {
-          if (task.index === id) {
-            task.description = inputValue;
+    const tasks = document.querySelectorAll('.Task');
+    tasks.forEach((task) => {
+      task.addEventListener('keyup', (e) => {
+        this.store.forEach((storedTask) => {
+          const taskId = e.target.id;
+          const taskValue = e.target.value;
+          if (storedTask.index === taskId) {
+            storedTask.description = taskValue;
           }
         });
-
         localStorage.setItem('Todo-list1', JSON.stringify(this.store));
-      }
+      });
     });
   }
 

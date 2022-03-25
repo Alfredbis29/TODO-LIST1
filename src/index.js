@@ -20,11 +20,8 @@ window.onload = () => {
       const clickedId = e.target.id;
       const clickedTask = store.find((e) => e.index === clickedId);
       clickedTask.text = e.target.value;
-
       localStorage.setItem('Todo-list1', JSON.stringify(store));
     };
     newlib.newTask(task);
   });
-
-  newlib.editTasks();
 };
