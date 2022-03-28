@@ -2,7 +2,7 @@
 
 > Todo list is a web app help you to management well your important tasks
 
-[Live Demo](https://alfredbis29.github.io/TODO-LIST1/dist/index.html)
+[Live Demo](https://alfredbis29.github.io/TODO-LIST1/dist/index.html
 
 ## Built With
 
