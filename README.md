@@ -27,7 +27,7 @@ To get a local copy up and running follow these simple example steps.
 
 - Open git bash on local computer
 - clone the repo with:
-
+.
 ```
 git clone  <git@github.com:Alfredbis29/TODO-LIST1.git>
 ```
