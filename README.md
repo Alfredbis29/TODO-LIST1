@@ -2,7 +2,7 @@
 
 ![TodoList](https://user-images.githubusercontent.com/88894525/168420852-c5809e41-65cb-403a-a807-67bf886b9ed0.png)
 
-> Todo list is a web app help you to management well your important tasks
+> Todo list is a web software that helps you manage your critical activities and time effectively. It motivates and organizes you to complete all chores assigned to you during the day.
 
 [Live Demo](https://alfredbis29.github.io/TODO-LIST1/dist/index.html)
 
